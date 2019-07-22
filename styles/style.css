@@ -1,0 +1,25 @@
+.navbar {
+    margin: 50px 0;
+}
+
+.main-navbar .navbar-brand {
+    font-size: 50px;
+    line-height: 25px;
+    color: #262626;
+    font-family: "Pacifico";
+    font-weight: 400;
+    text-align: right;
+}
+
+  .main-navbar .navbar-collapse .navbar-nav .nav-item {
+    box-sizing: border-box;
+    line-height: 25px;
+    padding: 0; }
+    .main-navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+      text-align: center;
+      padding: 5px 0;
+      margin: 0 15px;
+      color: #262626;
+        
+      font-weight: 700;
+    }
