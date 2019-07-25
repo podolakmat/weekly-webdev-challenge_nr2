@@ -157,6 +157,12 @@ button:hover {
 
 .services {
     background-color: #70bfff;
+    min-height: 790px;
+}
+
+.services-btns {
+    background-color: darksalmon;
+    min-height: 100%;
 }
 
 .services-item {
