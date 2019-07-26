@@ -1,3 +1,8 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
 a {
     text-decoration: none;
 }
@@ -6,8 +11,12 @@ ul {
     list-style: none;
 }
 
-*, *:before, *:after {
-  box-sizing: border-box;
+.about h1, .services h1 {
+    font-size: 5.625rem;
+    line-height: 5.9375rem;
+    color: #ffffff;
+    font-family: "Raleway";
+    font-weight: 700;
 }
 
 .header .navbar {
@@ -103,6 +112,11 @@ button:hover {
 }
 
 
+.scroll {
+    background-image: url(../images/mouse-icon.png);
+    width: 200px;
+    height: 100px;
+}
 
 @media (max-width:35.9rem) {
     .header {
@@ -122,17 +136,9 @@ button:hover {
 }
 
 
-.about img{
+.bg-img{
     width: 100%; 
     height: 100%;
-}
-
-.about h1 {
-    font-size: 5.625rem;
-    line-height: 5.9375rem;
-    color: #ffffff;
-    font-family: "Raleway";
-    font-weight: 700;
 }
 
 .about p {
@@ -160,9 +166,12 @@ button:hover {
     min-height: 790px;
 }
 
+.services .container {
+    min-height: 790px;
+}
+
 .services-btns {
-    background-color: darksalmon;
-    min-height: 100%;
+    min-height: 790px;
 }
 
 .services-item {
@@ -173,6 +182,7 @@ button:hover {
     background-color: #ffffff;
     cursor: pointer;
     transition: ease-in-out 0.4s;
+    margin-bottom: 20px;
 }
 
 .services-link {
@@ -215,3 +225,16 @@ button:hover {
     box-shadow: inset 0px 0px 0px 3px #f7f7f7;
 }
 
+
+.services-header {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@media (max-width:25rem) {
+    .services h1 {
+          font-size: 3.625rem;
+    }
+}
