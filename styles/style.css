@@ -112,10 +112,32 @@ button:hover {
 }
 
 
-.scroll {
-    background-image: url(../images/mouse-icon.png);
-    width: 200px;
-    height: 100px;
+.mouse-scrool {
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: nameanimation 1s infinite;
+}
+
+@keyframes nameanimation {
+    0% {
+    top: 92%;
+  }
+    50% {
+    top: 94%;
+  }
+    100% {
+    top: 96%;
+  }
+    0% {
+    top: 92%;
+  }
+    50% {
+    top: 94%;
+  }
+    100% {
+    top: 96%;
+  }
 }
 
 @media (max-width:35.9rem) {
