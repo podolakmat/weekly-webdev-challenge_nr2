@@ -111,33 +111,39 @@ button:hover {
     background-color: #CE2C55;
 }
 
-
-.mouse-scrool {
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: nameanimation 1s infinite;
+.mouse-scroll {
+    top: 90%;
+    left: 50%;  
+    transform: translate(-50%, -50%);
+    width: 25px;
+    height: 45px;
+    border: 2px solid #262626;
+    border-radius: 15px;
+    cursor: pointer;
 }
 
-@keyframes nameanimation {
-    0% {
-    top: 92%;
-  }
-    50% {
-    top: 94%;
-  }
-    100% {
-    top: 96%;
-  }
-    0% {
-    top: 92%;
-  }
-    50% {
-    top: 94%;
-  }
-    100% {
-    top: 96%;
-  }
+.mouse-wheel {
+  height: 6px;
+  margin: 2px auto 0;
+  display: block;
+  width: 3px;
+  background-color: #262626;
+  border-radius: 50%;
+  animation: 1.6s ease infinite wheel-up-down;
+}
+
+ @keyframes wheel-up-down {
+	0% {
+	    margin-top: 2px;
+	    opacity: 0;
+	}
+	50% {
+	    opacity: 1;
+	}
+	100% {
+	    margin-top: 20px;
+	    opacity: 0;
+	}
 }
 
 @media (max-width:35.9rem) {
