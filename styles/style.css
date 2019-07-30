@@ -1,8 +1,3 @@
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
-
 a {
     text-decoration: none;
 }
@@ -11,7 +6,7 @@ ul {
     list-style: none;
 }
 
-.about h1, .services h1 {
+.section-header, .section-header {
     font-size: 5.625rem;
     line-height: 5.9375rem;
     color: #ffffff;
@@ -20,9 +15,9 @@ ul {
 }
 
 .header .navbar {
+    margin: 0;
     padding-top: 3.125rem;
     padding-bottom: 3.125rem;
-    margin: 0;
     transition: ease-in-out 0.7s;
 }
 
@@ -32,7 +27,6 @@ ul {
     color: #262626;
     font-family: "Pacifico";
     font-weight: 400;
-    text-align: right;
 }
 
 .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
@@ -54,13 +48,32 @@ ul {
     padding-top: 2rem !important;
     padding-bottom: 2rem !important;
     transition: ease-in-out 0.7s;
-    border-bottom: 1px solid #262626;
+    border-bottom: 0.0625rem solid #262626;
 }
 
-@media (max-width:48rem) {
+@media (max-width: 768px) {
+    .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+        margin-top: 1rem;
+        font-size: 1.125rem; 
+    }
+
+    .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+        margin-top: 1rem;
+        border-top: none;
+        color: #ff6033;
+    }
+
+    nav.navbar {
+        background: #eeeeee;
+    }
+    
     .navbar .container {
         margin-left: 0;
     }
+}
+
+.navbar a.navbar-brand:hover {
+    color: #ff6033;
 }
 
 .header {
@@ -68,10 +81,6 @@ ul {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.header-content {
-    height: 100vh;
 }
 
 .header-content h1 {
@@ -87,15 +96,13 @@ ul {
     color: #262626;
     font-family: "Raleway";
     font-weight: 300;    
-    margin-bottom: 0;
 }
 
 .button {
     width: 12.5rem;
     height: 3.44rem;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+    box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,0.5);
     background-color: #ff6033;
-    border: none;
     margin-top: 2.19rem;
 }
 
@@ -115,38 +122,35 @@ button:hover {
     top: 90%;
     left: 50%;  
     transform: translate(-50%, -50%);
-    width: 25px;
-    height: 45px;
-    border: 2px solid #262626;
-    border-radius: 15px;
+    width: 1.5625rem;
+    height: 2.8125rem;
+    border: 0.125rem solid #262626;
     cursor: pointer;
 }
 
 .mouse-wheel {
-  height: 6px;
-  margin: 2px auto 0;
-  display: block;
-  width: 3px;
-  background-color: #262626;
-  border-radius: 50%;
-  animation: 1.6s ease infinite wheel-up-down;
+    height: 0.357rem;
+    margin: 0.125rem auto 0;
+    width: 0.1875rem;
+    background-color: #262626;
+    animation: 1.6s ease infinite wheel-up-down;
 }
 
  @keyframes wheel-up-down {
 	0% {
-	    margin-top: 2px;
+        margin-top: 0.125rem;
 	    opacity: 0;
 	}
 	50% {
 	    opacity: 1;
 	}
 	100% {
-	    margin-top: 20px;
+	    margin-top: 1.25rem;
 	    opacity: 0;
 	}
 }
 
-@media (max-width:35.9rem) {
+@media (max-width: 575px) {
     .header {
         background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
                   url(../images/header-bg.png);
@@ -163,12 +167,6 @@ button:hover {
     background-color: #00b1b1;
 }
 
-
-.bg-img{
-    width: 100%; 
-    height: 100%;
-}
-
 .about p {
     font-size: 1.1rem;
     line-height: 1.6875rem;
@@ -177,7 +175,7 @@ button:hover {
     font-weight: 300;    
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 768px) {
     .about {
         padding-top: 1.25rem;
         padding-bottom: 1.25rem;
@@ -191,38 +189,35 @@ button:hover {
 
 .services {
     background-color: #70bfff;
-    min-height: 790px;
+    min-height: 49.375rem‬;
 }
 
 .services .container {
-    min-height: 790px;
+    min-height: 49.375rem‬;
 }
 
 .services-btns {
-    min-height: 790px;
+    min-height: 49.375rem‬;
 }
 
 .services-item {
     width: 100%;
-    max-width:400px;
-    height: 100px;
-    box-shadow: 0 4px 5px 2px rgba(0, 0, 0, 0.5);
+    max-width:25rem;
+    height: 6.25rem;
+    box-shadow: 0 0.25rem 0.3125rem; 0.125rem rgba(0, 0, 0, 0.5);
     background-color: #ffffff;
     cursor: pointer;
     transition: ease-in-out 0.4s;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .services-link {
-    width: 100%;
-    height: 100%;
     padding: 0 32.5% 0 7.5%;
-    font-size: 20px;
-    line-height: 27px;
+    font-size: 1.25rem;
+    line-height: 1.6875rem;
     color: #262626;
     font-family: "Raleway";
     font-weight: 700;
-    text-align: right;
 }
 
 .services-link:after {
@@ -232,16 +227,14 @@ button:hover {
   content: "";
   display: block;
   height: 100%;
-  width: 1px;
+  width: 0.0625rem;
   background: #9d9d9d;
 }
 
 .services-icon {
-  width: 25%;
-  height: 100%;
   right: 0;
   top: 0;
-  font-size: 50px;
+  font-size: 3.125rem;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
@@ -250,7 +243,7 @@ button:hover {
 
 .services-item:hover {
     background-color: rgba(255,255,255, 0.5);
-    box-shadow: inset 0px 0px 0px 3px #f7f7f7;
+    box-shadow: inset 0 0 0 0.1875rem #f7f7f7;
 }
 
 
@@ -261,8 +254,8 @@ button:hover {
 }
 
 
-@media (max-width:25rem) {
-    .services h1 {
+@media (max-width: 400px) {
+    .services .section-header {
           font-size: 3.625rem;
     }
 }
