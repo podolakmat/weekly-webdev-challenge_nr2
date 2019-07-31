@@ -12,6 +12,7 @@ ul {
     color: #ffffff;
     font-family: "Raleway";
     font-weight: 700;
+    margin-bottom: 2rem;
 }
 
 .header .navbar {
@@ -175,21 +176,29 @@ button:hover {
     font-weight: 300;    
 }
 
-@media (min-width: 768px) {
-    .about {
-        padding-top: 1.25rem;
-        padding-bottom: 1.25rem;
+@media (max-width: 768px) {
+    .about .section-header {
+        text-align: center;
     }
+}
 
-    .about img {
-        margin-left: -6.25rem;
+@media (min-width: 769px) and (max-width: 1199px) {
+    .about .section-header {
+        font-size: 3rem;
     }
 }
 
 
+@media (max-width: 1199px) {
+    .about  {
+        padding-bottom: 2rem;
+    }
+}
+
 .services {
     background-color: #70bfff;
     min-height: 49.375rem‬;
+    padding: 5rem 0;
 }
 
 .services .container {
@@ -198,6 +207,7 @@ button:hover {
 
 .services-btns {
     min-height: 49.375rem‬;
+    margin: 5rem 0 2rem 0;
 }
 
 .services-item {
