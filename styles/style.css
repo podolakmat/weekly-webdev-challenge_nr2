@@ -192,6 +192,7 @@ button:hover {
     font-family: "Raleway";
     font-weight: 300;    
     word-break: break-all;
+    
 }
 
 @media (max-width: 768px) {
@@ -203,6 +204,7 @@ button:hover {
     .about p { 
         margin: auto;
         width: 85%;
+        text-align-last: center;
     }
 }
 
@@ -306,9 +308,14 @@ button:hover {
 }
 
 .gallery {
-    min-height: 1536px;
+    padding-bottom: 6.25rem;
     background-color: #ffe92f;
     padding-top: 6.25rem;
+}
+
+.gallery p {
+    text-align-last: center;
+    word-break: break-all;
 }
 
 .gallery-box img {
@@ -325,4 +332,10 @@ button:hover {
 .gallery-btn {
     margin-top: 45px;
     background-color: #5585a2;
+}
+
+@media (min-width: 769px) { 
+    .gallery p {
+        width: 70%;
+    }
 }
