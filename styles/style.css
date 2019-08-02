@@ -317,7 +317,12 @@ button:hover {
     padding-top: 6.25rem;
 }
 
+.gallery .section-header {
+    color: #262626;
+}
+
 .gallery p {
+    color: #262626;
     text-align-last: center;
     word-break: break-all;
 }
@@ -503,4 +508,48 @@ button:hover {
 
 .blog-btn {
     background-color: #f72b3b;
+}
+
+.contact {
+    min-height: 54rem;
+    background-image: url(../images/contact-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 6.25rem 0;
+}
+
+.contact .section-header {
+    color: #262626;
+}
+
+.contact p {
+    color: #262626;
+    text-align-last: center;
+    word-break: break-all;
+}
+
+@media (max-width: 768px) {
+    .contact p {
+        width: 95%;
+    }
+}
+
+@media (min-width: 769px) { 
+    .contact p {
+        width: 29%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact .section-header {
+        text-align: center;
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1199px){ 
+    .contact p {
+        width: 50%;
+    }
 }
