@@ -355,3 +355,63 @@ button:hover {
         text-align: center;
         font-size: 3rem;
     }
+}
+
+.subscribe {
+    min-height: 31rem;
+    padding: 5rem 0;
+    background-image: url(../images/subscribe-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.subscribe .section-header {
+    font-size: 2.5rem;
+    color: #262626;
+}
+
+.subscribe-btn {
+    width: 10.625rem;
+    background-color: #96b92c;
+}
+
+.subscribe .form-control {
+    height: 3.44rem;
+}
+
+.subscribe .form-control::placeholder {
+    font-size: 15px;
+    color: #262626;
+    font-family: "Raleway";
+    font-weight: 300;
+}
+
+@media (max-width: 369px) { 
+    .subscribe .section-header {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 767px) { 
+    .subscribe {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+            url(../images/subscribe-bg.png);
+    }
+    
+    .form  {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 575px)and (max-width: 767px) { 
+    .subscribe .form-control  {
+        margin-bottom: 1rem;
+    }
+}
+
+.blog {
+    min-height: 54rem;
+    background-color: #b07cf7;
+    padding: 6.25rem 0;
+}
