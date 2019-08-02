@@ -306,7 +306,8 @@ button:hover {
 
 @media (max-width: 400px) {
     .services .section-header {
-          font-size: 3.625rem;
+        font-size: 3.625rem;
+        width: 75% !important; 
     }
 }
 
