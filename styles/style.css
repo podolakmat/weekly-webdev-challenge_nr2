@@ -527,6 +527,7 @@ button:hover {
     color: #262626;
     text-align-last: center;
     word-break: break-all;
+    margin-bottom: 50px;
 }
 
 @media (max-width: 768px) {
@@ -553,3 +554,91 @@ button:hover {
         width: 50%;
     }
 }
+
+.contact input, .contact textarea {
+    background-color: rgba(0, 196, 195, 0.5);
+    font-weight: 700;
+    color: #ffffff; 
+    font-size: 15px;
+    line-height: 25px;
+    font-family: "Raleway";
+}
+
+.contact input::placeholder, .contact textarea::placeholder {
+    color: #ffffff; 
+    font-weight: normal;
+}
+
+.contact textarea {
+    resize: none;
+}
+
+.contact textarea:focus, .contact input:focus {
+    background-color: #00c4c4;
+}
+
+.btn-contact {
+    margin: 0;
+    background-color: #00c4c4;
+}
+
+.contact-item {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 25px;
+    color: #262626;
+    font-family: "Raleway"; 
+}
+
+.contact-title {
+    font-size: 17px;
+}
+
+@media (max-width: 767px){ 
+    .contact-details {
+        margin-top: 30px;
+    }
+    
+    .contact-item {
+        text-align: center;
+    }
+}
+
+.footer {
+    min-height: 90px;
+    background-color: #262626;
+    font-size: 16px;
+    line-height: 25px;
+    color: #b9b9b9;
+    font-family: "Raleway";
+    font-weight: 300;
+}
+
+.footer-logo {
+    font-size: 25px;
+    line-height: 25px;
+    color: #b9b9b9;
+    font-family: "Pacifico";
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.footer-logo:hover {
+    text-decoration: none;
+    color:#ff2b58;
+}
+
+.footer .layout-author {
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.footer .layout-author:hover {
+    color:#ff2b58 !important;
+}
+
+@media (max-width: 575px){ 
+    .footer-item {
+        margin-top: 20px;
+    }
