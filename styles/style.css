@@ -128,6 +128,14 @@ ul {
 
 .header-btn {
     background-color: #ff6033;
+    display: inline-block;
+    text-align: center;
+}
+
+.header-btn:hover {
+    text-decoration: none;
+    background-color: #CE2C55;
+    color: #ffffff;
 }
 
 button:hover {
